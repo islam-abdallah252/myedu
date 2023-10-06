@@ -1,0 +1,18 @@
+.home {
+  &__intro-page {
+    background: var(--ion-color-primary) !important;
+    --ion-background-color: var(--ion-color-primary) !important;
+    height: 100vh;
+
+    &__container {
+      max-width: 1440px;
+      margin: 0px auto;
+      padding-top: 1.25rem;
+
+      ion-title {
+        height: 4.5rem;
+        line-height: 4.5rem;
+      }
+    }
+  }
+}
