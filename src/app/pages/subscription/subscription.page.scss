@@ -30,21 +30,23 @@
 
     &__content {
       background: #fff;
-      width: 1440px;
+      max-width: 1440px;
       height: 500px;
       display: flex;
       flex-direction: row;
-
+      color: #000;
 
       &__checkout {
         width: 70%;
         background: #fff;
+        padding: 2rem;
       }
 
       &__summary {
         width: 30%;
         max-width: 30%;
         background: #F1EDFE;
+        padding: 2rem;
       }
     }
   }
