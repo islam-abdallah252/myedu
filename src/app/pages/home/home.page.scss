@@ -19,19 +19,7 @@
       height: auto;
 
 
-      ion-header {
-        box-shadow: none !important;
 
-        ion-toolbar {
-          --background: #ab95f9 !important;
-          --border-width: 0px !important;
-          margin-bottom: 3.5rem;
-
-          ion-title {
-            padding: 0px;
-          }
-        }
-      }
 
 
       &__intro-title {
@@ -128,7 +116,7 @@
 
     @media (max-width:991px) {
       background-size: contain;
-      padding: 7rem 1rem;
+      padding: 2rem 1rem;
       background-image: none
     }
 
@@ -172,20 +160,48 @@
     &__steps-to-subscribe {
       margin-top: 5rem;
 
-      &__title {
-        text-align: center;
-        font-family: 'Nunito', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 900;
-        line-height: 1.95rem;
+      &__cards {
+        display: flex;
 
+        @media(max-width:991px) {
+          flex-direction: column;
+          gap: 4rem;
+        }
+
+        &__card {
+          width: 33%;
+
+          @media(max-width:991px) {
+            width: 100%;
+          }
+        }
       }
 
-      &__title-two {
-        font-family: 'Nunito', sans-serif;
-        font-size: 2rem;
-        font-weight: 900;
-        line-height: 1.95rem;
+      &__text-title {
+        &__title {
+          text-align: center;
+          font-family: 'Nunito', sans-serif;
+          font-size: 1.5rem;
+          font-weight: 900;
+          line-height: 1.95rem;
+
+          @media(max-width:991px) {
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+        }
+
+        &__title-two {
+          font-family: 'Nunito', sans-serif;
+          font-size: 2rem;
+          font-weight: 900;
+          line-height: 1.95rem;
+
+          @media(max-width:991px) {
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+        }
       }
 
 
@@ -197,6 +213,10 @@
       &__desc {
         margin-top: 11px;
         max-width: 80%;
+
+        @media(max-width:991px) {
+          max-width: 90%;
+        }
       }
 
       &__subscribe-now {
@@ -216,7 +236,6 @@
         height: 6rem;
         border-radius: 25px;
         margin-top: 75px;
-        margin-bottom: -70px;
 
         @media(max-width:991px) {
           font-size: 1rem;
@@ -224,7 +243,49 @@
           width: 12rem;
           height: 2.5rem;
           --border-radius: 0.75rem;
+          border-radius: 10px;
+          margin-top: 34px;
         }
+      }
+    }
+  }
+
+  .footer {
+    background: white;
+    color: #000;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-end: 20px;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 2rem;
+
+    @media(max-width:991px) {
+      padding-bottom: 3rem;
+      flex-direction: column;
+      text-align: start;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .links {
+      ion-item {
+        background: transparent;
+        --background: #fff;
+        --color: #000;
+        text-decoration: underline;
+        cursor: pointer;
+        height: 35px;
+      }
+    }
+
+    .copy-rights {
+      padding-inline-start: 1rem;
+      padding-top: 1rem;
+
+      @media(max-width:991px) {
+        padding-top: 2rem;
       }
     }
   }

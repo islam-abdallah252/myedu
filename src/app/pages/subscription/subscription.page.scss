@@ -1,0 +1,80 @@
+.subscription {
+  background-image: url('./../../../assets/bg/subscribe-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: #FFF9E6;
+  color: #000;
+
+  ion-toolbar {
+    padding: 0px 70px;
+  }
+
+
+
+  &__container {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    height: 100%;
+    min-height: 100vh;
+
+    ion-content {
+      max-width: 100%;
+      min-height: 500px;
+      background: #fff;
+      color: #000;
+    }
+
+    &__content {
+      background: #fff;
+      width: 1440px;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+
+
+      &__checkout {
+        width: 70%;
+        background: #fff;
+      }
+
+      &__summary {
+        width: 30%;
+        max-width: 30%;
+        background: #F1EDFE;
+      }
+    }
+  }
+}
+
+.submit-now {
+  margin-top: 1.5rem;
+  --border-radius: 1.5rem;
+  --background: var(--White, #FFF);
+  --box-shadow: 4px 4px 0px -1px #896AF9;
+  color: var(--ion-color-primary);
+  text-align: center;
+  border: 1px solid #896AF9;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.4rem;
+  width: 17.8rem;
+  height: 6rem;
+  border-radius: 25px;
+  margin-top: 75px;
+
+  @media(max-width:991px) {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    width: 12rem;
+    height: 2.5rem;
+    --border-radius: 0.75rem;
+    border-radius: 10px;
+    margin-top: 34px;
+  }
+}
