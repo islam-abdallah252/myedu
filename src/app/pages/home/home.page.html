@@ -4,6 +4,7 @@
       <div class="home__intro-page__container ion-padding">
         <ion-header>
           <ion-toolbar slot="start">
+            <ion-back-button text="Back"></ion-back-button>
             <ion-title slot="start" size="large">Logo</ion-title>
           </ion-toolbar>
         </ion-header>
@@ -19,7 +20,10 @@
             filled with fun and learning.
           </p>
         </ion-text>
-        <ion-button class="home__intro-page__container__subscribe-now">
+        <ion-button
+          [routerLink]="['/subscription']"
+          class="home__intro-page__container__subscribe-now"
+        >
           Subscribe Now
         </ion-button>
 
@@ -44,103 +48,115 @@
           >
         </div>
         <div class="home__discover__steps-to-subscribe">
-          <ion-grid>
-            <ion-row size="4" size-sm="12">
-              <ion-col size-sm="12">
-                <div class="flex-vertical">
-                  <ion-img
-                    class="home__discover__steps-to-subscribe__icon"
-                    src="assets/icon/subscribe-one.png"
-                    alt="bg home"
-                  ></ion-img>
-                  <ion-title
-                    class="home__discover__steps-to-subscribe__title"
+          <div class="home__discover__steps-to-subscribe__cards">
+            <div class="home__discover__steps-to-subscribe__cards__card">
+              <div class="flex-vertical">
+                <ion-img
+                  class="home__discover__steps-to-subscribe__icon"
+                  src="assets/icon/customize.png"
+                  alt="bg home"
+                ></ion-img>
+                <div class="home__discover__steps-to-subscribe__text-title">
+                  <ion-text
+                    class="home__discover__steps-to-subscribe__text-title__title"
                     size="large"
                   >
                     Step 1:
-                  </ion-title>
+                  </ion-text>
                   <ion-text
-                    class="home__discover__steps-to-subscribe__title-two"
+                    class="home__discover__steps-to-subscribe__text-title__title-two"
                     size="large"
                   >
                     Subscribe</ion-text
                   >
+                </div>
+                <ion-text
+                  size="small"
+                  class="home__discover__steps-to-subscribe__desc"
+                  >Select a subscription plan that suits your child's learning
+                  needs and preferences.
+                </ion-text>
+              </div>
+            </div>
+            <div class="home__discover__steps-to-subscribe__cards__card">
+              <div class="flex-vertical">
+                <ion-img
+                  class="home__discover__steps-to-subscribe__icon"
+                  src="assets/icon/subscribe-one.png"
+                  alt="bg home"
+                ></ion-img>
+
+                <div class="home__discover__steps-to-subscribe__text-title">
                   <ion-text
-                    size="small"
-                    class="home__discover__steps-to-subscribe__desc"
-                    >Select a subscription plan that suits your child's learning
-                    needs and preferences.
+                    class="home__discover__steps-to-subscribe__text-title__title"
+                    size="large"
+                  >
+                    Step 2:
+                  </ion-text>
+                  <ion-text
+                    class="home__discover__steps-to-subscribe__text-title__title-two"
+                    size="large"
+                  >
+                    Personalise Your Box
                   </ion-text>
                 </div>
-              </ion-col>
-            </ion-row>
-            <ion-row size="4" size-sm="12">
-              <ion-col size-sm="12">
-                <div class="flex-vertical">
-                  <ion-img
-                    class="home__discover__steps-to-subscribe__icon"
-                    src="assets/icon/subscribe-one.png"
-                    alt="bg home"
-                  ></ion-img>
-                  <ion-title
-                    class="home__discover__steps-to-subscribe__title"
+                <ion-text
+                  size="small"
+                  class="home__discover__steps-to-subscribe__desc"
+                  >Tell us about your child's age, interests, and learning
+                  goals, and we'll customize their surprise box accordingly.
+                </ion-text>
+              </div>
+            </div>
+            <div class="home__discover__steps-to-subscribe__cards__card">
+              <div class="flex-vertical">
+                <ion-img
+                  class="home__discover__steps-to-subscribe__icon"
+                  src="assets/icon/surprise.png"
+                  alt="bg home"
+                ></ion-img>
+                <div class="home__discover__steps-to-subscribe__text-title">
+                  <ion-text
+                    class="home__discover__steps-to-subscribe__text-title__title"
                     size="large"
                   >
-                    Step 1:
-                  </ion-title>
+                    Step 3:
+                  </ion-text>
                   <ion-text
-                    class="home__discover__steps-to-subscribe__title-two"
+                    class="home__discover__steps-to-subscribe__text-title__title-two"
                     size="large"
                   >
-                    Subscribe</ion-text
-                  >
-                  <ion-text
-                    size="small"
-                    class="home__discover__steps-to-subscribe__desc"
-                    >Select a subscription plan that suits your child's learning
-                    needs and preferences.
+                    Receive Your Surprise Box
                   </ion-text>
                 </div>
-              </ion-col>
-            </ion-row>
-            <ion-row size="4" size-sm="12">
-              <ion-col>
-                <div class="flex-vertical">
-                  <ion-img
-                    class="home__discover__steps-to-subscribe__icon"
-                    src="assets/icon/subscribe-one.png"
-                    alt="bg home"
-                  ></ion-img>
-                  <ion-title
-                    class="home__discover__steps-to-subscribe__title"
-                    size="large"
-                  >
-                    Step 1:
-                  </ion-title>
-                  <ion-text
-                    class="home__discover__steps-to-subscribe__title-two"
-                    size="large"
-                  >
-                    Subscribe</ion-text
-                  >
-                  <ion-text
-                    size="small"
-                    class="home__discover__steps-to-subscribe__desc"
-                    >Select a subscription plan that suits your child's learning
-                    needs and preferences.
-                  </ion-text>
-                </div>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-          <div>
-            <ion-button
-              class="home__discover__steps-to-subscribe__subscribe-now"
-            >
-              Subscribe Now
-            </ion-button>
+                <ion-text
+                  size="small"
+                  class="home__discover__steps-to-subscribe__desc"
+                  >Sit back and relax as your child eagerly awaits the arrival
+                  of their monthly surprise box filled with engaging learning
+                  materials.
+                </ion-text>
+              </div>
+            </div>
           </div>
+
+          <ion-button
+            [routerLink]="['/subscription']"
+            class="home__discover__steps-to-subscribe__subscribe-now"
+          >
+            Subscribe Now
+          </ion-button>
         </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="links">
+        <ion-item lines="none">Privacy Policy</ion-item>
+        <ion-item lines="none">Terms of Service</ion-item>
+        <ion-item lines="none">Cookies Settings</ion-item>
+      </div>
+      <div class="copy-rights">
+        <ion-text> © 2023 MyEdu. All rights reserved. </ion-text>
       </div>
     </div>
   </ion-content>

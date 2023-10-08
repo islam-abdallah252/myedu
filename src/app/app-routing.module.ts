@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'subscription',
+    loadChildren: () => import('./pages/subscription/subscription.module').then(m => m.SubscriptionPageModule)
+  },
 ];
 
 @NgModule({

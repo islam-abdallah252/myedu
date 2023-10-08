@@ -1,0 +1,325 @@
+.subscription {
+  background-image: url('./../../../assets/bg/subscribe-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: #FFF9E6;
+  color: #000;
+
+  ion-toolbar {
+    padding: 0px 70px;
+
+    @media(max-width:991px) {
+      padding: 0px 30px;
+    }
+  }
+
+
+
+  &__container {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+
+    ion-content {
+      max-width: 100%;
+      background: #fff;
+      color: #000;
+      min-height: 88vh;
+    }
+
+    &__content {
+      background: #fff;
+      max-width: 1440px;
+      display: flex;
+      flex-direction: row;
+      color: #000;
+
+      @media(max-width:991px) {
+        flex-direction: column;
+      }
+
+      &__checkout {
+        width: 70%;
+        background: #fff;
+        padding: 2rem;
+
+        @media(max-width:991px) {
+          width: 100%;
+          padding: 1rem 0.5rem;
+        }
+
+        ion-grid {
+          padding: 0 20px;
+          margin-top: 15px;
+        }
+
+        ion-item {
+          ion-grid {
+            padding: 0 0px;
+            margin-top: 0px;
+          }
+        }
+
+        ion-item {
+          --background: #fff;
+          color: #000;
+          margin-bottom: 15px;
+        }
+
+        .checkout-title {
+          padding: 0px;
+          color: #202124;
+          text-align: start;
+          font-family: 'Nunito', sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 31.999px;
+          margin-bottom: -10px;
+        }
+
+        .checkout-decs {
+          color: #202124;
+          text-align: start;
+          font-family: 'Nunito', sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          /* 150% */
+          letter-spacing: 0.1px;
+        }
+
+
+        form {
+          ion-label {
+            margin-bottom: 10px;
+            color: #344054;
+            display: inline-block;
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+
+            &.label-select {
+              margin-bottom: 0px;
+              margin-top: 13px;
+            }
+          }
+
+          ion-radio-group {
+            width: 100%;
+
+            ion-col {
+              display: inline-block;
+              width: 50%;
+
+              ion-radio {
+                border: 1px solid #888;
+                width: 100%;
+                height: 56px;
+                padding: 0px 10px;
+                border-radius: 5px;
+              }
+            }
+          }
+
+
+        }
+
+
+      }
+
+      &__summary {
+        width: 30%;
+        max-width: 30%;
+        background: #F1EDFE;
+        padding: 1rem;
+
+        @media(max-width:991px) {
+          max-width: 100%;
+          width: 100%;
+        }
+
+        ion-title {
+          color: #202124;
+          text-align: start;
+          font-family: 'Nunito', sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 31.999px;
+          margin-bottom: -10px;
+        }
+
+        &__desc {
+          color: #202124;
+          text-align: start;
+          font-family: 'Nunito', sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px;
+          /* 150% */
+          letter-spacing: 0.1px;
+        }
+
+        .box-white {
+          background: #fff;
+          border-radius: 8px;
+          padding: 1rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+
+          ion-col {
+            color: #202124;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+
+            span {
+              color: #838383;
+              text-align: center;
+              font-family: 'Nunito', sans-serif;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 16px;
+            }
+
+          }
+
+          ion-col:last-child {
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+
+  &__submit-now {
+    margin-top: 1.5rem;
+    --border-radius: 1.5rem;
+    --background: var(--White, #FFF);
+    --box-shadow: 4px 4px 0px -1px #896AF9;
+    color: var(--ion-color-primary);
+    text-align: center;
+    border: 1px solid #896AF9;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.4rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 25px;
+    margin-top: 33px;
+
+    @media(max-width:991px) {
+      font-size: 1rem;
+      line-height: 1.75rem;
+      width: 100%;
+      height: 2.5rem;
+      --border-radius: 0.75rem;
+      border-radius: 10px;
+      margin-top: 34px;
+    }
+  }
+
+  .footer {
+    background: white;
+    color: #000;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-end: 20px;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 2rem;
+
+    @media(max-width:991px) {
+      padding-bottom: 3rem;
+      flex-direction: column;
+      text-align: start;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .links {
+      display: flex;
+
+      @media (max-width:991px) {
+        flex-direction: column;
+      }
+
+      ion-item {
+        background: transparent;
+        --background: #fff;
+        --color: #000;
+        text-decoration: underline;
+        cursor: pointer;
+        height: 35px;
+      }
+    }
+
+    .copy-rights {
+      padding-inline-start: 1rem;
+      padding-top: 1rem;
+
+      @media(max-width:991px) {
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.fees-count {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: .5rem;
+
+  span {
+    color: #202124;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &.divider {
+    border-top: 1px solid #D1C5FB;
+    font-size: 17px;
+    font-style: normal;
+    padding-top: 10px;
+    font-weight: 700;
+
+  }
+
+
+  /* 21px */
+}
