@@ -4,6 +4,7 @@
       <div class="home__intro-page__container ion-padding">
         <ion-header>
           <ion-toolbar slot="start">
+            <ion-back-button text="Back"></ion-back-button>
             <ion-title slot="start" size="large">Logo</ion-title>
           </ion-toolbar>
         </ion-header>
@@ -19,7 +20,10 @@
             filled with fun and learning.
           </p>
         </ion-text>
-        <ion-button class="home__intro-page__container__subscribe-now">
+        <ion-button
+          [routerLink]="['/subscription']"
+          class="home__intro-page__container__subscribe-now"
+        >
           Subscribe Now
         </ion-button>
 
@@ -136,7 +140,10 @@
             </div>
           </div>
 
-          <ion-button class="home__discover__steps-to-subscribe__subscribe-now">
+          <ion-button
+            [routerLink]="['/subscription']"
+            class="home__discover__steps-to-subscribe__subscribe-now"
+          >
             Subscribe Now
           </ion-button>
         </div>

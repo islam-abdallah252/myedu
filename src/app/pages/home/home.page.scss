@@ -270,6 +270,12 @@
     }
 
     .links {
+      display: flex;
+
+      @media (max-width:991px) {
+        flex-direction: column;
+      }
+
       ion-item {
         background: transparent;
         --background: #fff;

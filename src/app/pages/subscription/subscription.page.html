@@ -9,36 +9,155 @@
       <div class="subscription__container__content">
         <div class="subscription__container__content__checkout">
           <ion-item>
-            <ion-title>Subscribe</ion-title>
-            <ion-text>to our Monthly Surprise Box</ion-text>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-title class="checkout-title"> Subscribe</ion-title>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-text class="checkout-decs"
+                    >to our Monthly Surprise Box</ion-text
+                  >
+                </ion-col>
+              </ion-row>
+            </ion-grid>
           </ion-item>
-          <ion-item>
-            <form>
-              <ion-title> Contact Information</ion-title>
-              <ion-list>
-                <ion-item>
+          <form>
+            <ion-title> Contact Information</ion-title>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-label>Your Name</ion-label>
                   <ion-input
-                    label="Solid input"
-                    label-placement="floating"
-                    fill="solid"
-                    placeholder="Enter text"
+                    fill="outline"
+                    placeholder="e.g Osama Alshathri"
                   ></ion-input>
-                </ion-item>
-                <ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="pt-20">
+                <ion-col>
+                  <ion-label>Email</ion-label>
                   <ion-input
-                    label="Solid input"
-                    label-placement="floating"
-                    fill="solid"
-                    placeholder="Enter text"
+                    fill="outline"
+                    placeholder="Osama@gmail.com"
                   ></ion-input>
-                </ion-item>
-              </ion-list>
-            </form>
-          </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="pt-50">
+                <ion-col>
+                  <ion-title class="p-0"> Child’s Information</ion-title>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-label>Email</ion-label>
+                  <ion-input
+                    fill="outline"
+                    placeholder="Osama@gmail.com"
+                  ></ion-input>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label class="label-select"
+                    >Child’s Date of Birth</ion-label
+                  >
+                </ion-col>
+                <ion-col>
+                  <ion-select placeholder="Date" fill="outline">
+                    <ion-select-option *ngFor="let i of  daysCount" [value]="i"
+                      >{{i}}</ion-select-option
+                    >
+                  </ion-select>
+                </ion-col>
+                <ion-col>
+                  <ion-select placeholder="Month" fill="outline">
+                    <ion-select-option
+                      *ngFor="let i of  monthsCount"
+                      [value]="i"
+                      >{{i}}</ion-select-option
+                    >
+                  </ion-select>
+                </ion-col>
+                <ion-col>
+                  <ion-select placeholder="Year" fill="outline">
+                    <ion-select-option *ngFor="let i of  yearsCount" [value]="i"
+                      >{{i}}</ion-select-option
+                    >
+                  </ion-select>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label class="label-select">Gender</ion-label>
+                </ion-col>
+                <ion-radio-group>
+                  <ion-col>
+                    <ion-radio fill="outline" value="boy">Boy</ion-radio>
+                  </ion-col>
+                  <ion-col>
+                    <ion-radio fill="outline" value="girl">Girl</ion-radio>
+                  </ion-col>
+                </ion-radio-group>
+              </ion-row>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-button class="subscription__submit-now">
+                    Subscribe Now
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </form>
         </div>
-        <div class="subscription__container__content__summary">test</div>
+        <div class="subscription__container__content__summary">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12">
+                <ion-title class="p-0">Summary</ion-title>
+              </ion-col>
+              <ion-col size="12">
+                <ion-text
+                  class="subscription__container__content__summary__desc"
+                  >of your Monthly Surprise Box</ion-text
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row class="box-white">
+              <ion-col size="6">
+                Mystery Box<br />
+                <span>X 1</span>
+              </ion-col>
+              <ion-col size="6"> SAR 456 <br /><span>Monthly</span> </ion-col>
+            </ion-row>
+            <ion-row class="fees-count">
+              <ion-col size="6">Subtotal </ion-col>
+              <ion-col class="text-end" size="6">
+                SAR <span>456</span>
+              </ion-col>
+            </ion-row>
+            <ion-row class="fees-count">
+              <ion-col size="6">Shipping </ion-col>
+              <ion-col class="text-end" size="6"> Free </ion-col>
+            </ion-row>
+            <ion-row class="fees-count">
+              <ion-col size="6">Taxes </ion-col>
+              <ion-col class="text-end" size="6">
+                SAR <span>456</span>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="fees-count divider">
+              <ion-col size="6">Total </ion-col>
+              <ion-col class="text-end" size="6">
+                SAR <span>456</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
       </div>
-      <!-- <ion-button class="subscription__submit-now"> Subscribe Now </ion-button> -->
       <div class="footer">
         <div class="links">
           <ion-item lines="none">Privacy Policy</ion-item>

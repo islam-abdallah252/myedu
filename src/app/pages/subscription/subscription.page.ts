@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['subscription.page.scss'],
 })
 export class SubscriptionPage {
-
-  constructor() { }
+  daysCount = Array(31).fill(0).map((x, i) => i + 1)
+  yearsCount = Array.from({ length: 51 }, (_, i) => new Date().getFullYear() - i)
+  monthsCount = Array(12).fill(0).map((x, i) => i + 1)
+  constructor() {
+  }
 
 }
